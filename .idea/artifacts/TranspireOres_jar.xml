@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TranspireOres:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TranspireOres_jar</output-path>
+    <root id="archive" name="TranspireOres.jar">
+      <element id="module-output" name="TranspireOres" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/de/tr7zw/item-nbt-api-plugin/2.12.3/item-nbt-api-plugin-2.12.3.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

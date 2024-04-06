@@ -1,0 +1,7 @@
+name: TranspireOres
+version: 1.01
+main: com.deserialize.transpireores.TranspireOres
+authors: [DeSerialize]
+commands:
+  ores:
+    aliases: [transpireore, transpireores, tranpireo]

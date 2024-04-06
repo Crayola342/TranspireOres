@@ -1,0 +1,108 @@
+messages:
+ore-give: '&a+ &7%ore% &fx%amount%'
+remove-ore: '&c[&4!&c] &cYou have removed &f%type%&c ore'
+no-permission: '&c[&4!&c] invalid permission'
+offline-player: '&c[&4!&c] &f%player% &cis currently offline'
+invalid-number: '&c[&4!&c] &f%number%&c is not a number'
+ore-placed: '&a[&2!&a] &f%ore%&a placed successfully!'
+invalid-ore: '&c[&4!&c] %ore% &cis not valid'
+ore-broken: '&c[&4!&c] &f%ore% &chas been removed!'
+help:
+  - '&aTranspireOres &7(1/1)'
+  - '&7'
+  - '&f/ores give (player) (type) (amount)'
+  - '&f/ores reload'
+
+ores:
+  gold:
+    drop:
+      material: "GOLD_ORE"
+      damage: 0
+      name: ''
+      lore: []
+      amount: 1
+    ore-spawn: "GOLD_ORE"
+    permission-based: true
+    permission: 'ore.break.gold'
+    ##regeneration delay in seconds
+    regeneration-delay: 5
+    ##the item you get given via the command.
+    placeable-item:
+      material: "GOLD_ORE"
+      damage: 0
+      name: '&cGold Ore Generator'
+      lore:
+        - '&7Place me to mine me!'
+    onBreak:
+      denied-break:
+        ##messages
+        send-message: true
+        message-type: "ACTION_BAR"
+        message: '&4&lERROR!'
+        ##sounds
+        play-sound: true
+        sound: "BLAZE_DEATH"
+        ##effects
+        play-effect: true
+        effect: "EXPLOSION_HUGE"
+        send-subtitle: false
+        subtitle: '&7Broken Gold ore'
+      allowed-break:
+        ##sounds
+        play-sound: true
+        sound: "BLAZE_DEATH"
+        ##effects
+        play-effect: true
+        effect: "EXPLOSION_HUGE"
+        ##messages
+        send-message: true
+        message-type: "ACTION_BAR"
+        message: '&4&lOre broken!'
+        send-subtitle: true
+        subtitle: '&7Broken gold ore'
+  coal:
+    drop:
+      material: "COAL_ORE"
+      damage: 0
+      name: ''
+      lore: []
+      amount: 1
+    ore-spawn: "COAL_ORE"
+    permission-based: true
+    permission: 'ore.break.coal'
+    ##regeneration delay in seconds
+    regeneration-delay: 5000
+    ##the item you get given via the command.
+    placeable-item:
+      material: "COAL_ORE"
+      damage: 0
+      name: '&cCoal Ore Generation Maker'
+      lore:
+        - '&7Place me to mine me!'
+    onBreak:
+      denied-break:
+        ##messages
+        send-message: true
+        message-type: "ACTION_BAR"
+        message: '&4&lERROR!'
+        ##sounds
+        play-sound: true
+        sound: "BLAZE_DEATH"
+        ##effects
+        play-effect: true
+        effect: "EXPLOSION_HUGE"
+        send-subtitle: false
+        subtitle: '&7Broken coal ore'
+      allowed-break:
+        ##sounds
+        play-sound: true
+        sound: "BLAZE_DEATH"
+        ##effects
+        play-effect: true
+        effect: "EXPLOSION_HUGE"
+        ##messages
+        send-message: true
+        message-type: "ACTION_BAR"
+        message: '&4&lOre broken!'
+        send-subtitle: true
+        subtitle: '&7Broken coal ore'
